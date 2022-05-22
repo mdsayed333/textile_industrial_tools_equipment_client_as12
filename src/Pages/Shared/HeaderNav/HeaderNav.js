@@ -70,9 +70,9 @@ const HeaderNav = () => {
               {menuItems}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Doctors Portal</a>
+          <a className="btn btn-ghost normal-case text-xl">Textile Industrial <br/> Tools And Equipment</a>
         </div>
-        <div className="navbar-end">
+        {/* <div className="navbar-end">
           <label
             tabIndex="1"
             htmlFor="dashboard-sidebar"
@@ -93,7 +93,7 @@ const HeaderNav = () => {
               />
             </svg>
           </label>
-        </div>
+        </div> */}
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">{menuItems}</ul>

@@ -1,0 +1,74 @@
+[
+    {
+        "_id": 1,
+        "name": "Textile Spindle, Packaging",
+        "description": "We manufacture and supply the best quality of Textile Spindle. Available with us in various technical",
+        "img": "https://5.imimg.com/data5/NF/NU/MY-969151/textile-spindle-250x250.jpg",
+        "price": 350,
+        "minimumOrder": 200,
+        "quantity": 5300
+    },
+    {
+        "_id": 2,
+        "name": "Textile Spindle, Packaging",
+        "description": "We manufacture and supply the best quality of Textile Spindle. Available with us in various technical",
+        "img": "https://5.imimg.com/data5/NF/NU/MY-969151/textile-spindle-250x250.jpg",
+        "price": 350,
+        "minimumOrder": 200,
+        "quantity": 5300
+    },
+    {
+        "_id": 3,
+        "name": "Textile Spindle, Packaging",
+        "description": "We manufacture and supply the best quality of Textile Spindle. Available with us in various technical",
+        "img": "https://5.imimg.com/data5/NF/NU/MY-969151/textile-spindle-250x250.jpg",
+        "price": 350,
+        "minimumOrder": 200,
+        "quantity": 5300
+    },
+    {
+        "_id": 4,
+        "name": "Textile Spindle, Packaging",
+        "description": "We manufacture and supply the best quality of Textile Spindle. Available with us in various technical",
+        "img": "https://5.imimg.com/data5/NF/NU/MY-969151/textile-spindle-250x250.jpg",
+        "price": 350,
+        "minimumOrder": 200,
+        "quantity": 5300
+    },
+    {
+        "_id": 5,
+        "name": "Textile Spindle, Packaging",
+        "description": "We manufacture and supply the best quality of Textile Spindle. Available with us in various technical",
+        "img": "https://5.imimg.com/data5/NF/NU/MY-969151/textile-spindle-250x250.jpg",
+        "price": 350,
+        "minimumOrder": 200,
+        "quantity": 5300
+    },
+    {
+        "_id": 6,
+        "name": "Textile Spindle, Packaging",
+        "description": "We manufacture and supply the best quality of Textile Spindle. Available with us in various technical",
+        "img": "https://5.imimg.com/data5/NF/NU/MY-969151/textile-spindle-250x250.jpg",
+        "price": 350,
+        "minimumOrder": 200,
+        "quantity": 5300
+    },
+    {
+        "_id": 7,
+        "name": "Textile Spindle, Packaging",
+        "description": "We manufacture and supply the best quality of Textile Spindle. Available with us in various technical",
+        "img": "https://5.imimg.com/data5/NF/NU/MY-969151/textile-spindle-250x250.jpg",
+        "price": 350,
+        "minimumOrder": 200,
+        "quantity": 5300
+    },
+    {
+        "_id": 8,
+        "name": "Textile Spindle, Packaging",
+        "description": "We manufacture and supply the best quality of Textile Spindle. Available with us in various technical",
+        "img": "https://5.imimg.com/data5/NF/NU/MY-969151/textile-spindle-250x250.jpg",
+        "price": 350,
+        "minimumOrder": 200,
+        "quantity": 5300
+    }
+]
