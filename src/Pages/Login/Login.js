@@ -25,10 +25,10 @@ const Login = () => {
   let from = location.state?.from?.pathname || "/";
 
   useEffect(() => {
-    if (user) {
+    if (user|| gUser) {
       navigate(from, { replace: true });
     }
-  }, [user,from, navigate]);
+  }, [user, gUser, from, navigate]);
 
   if (loading || gloading) {
     return <Loading></Loading>;

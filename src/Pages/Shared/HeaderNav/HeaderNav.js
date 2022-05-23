@@ -20,15 +20,21 @@ const HeaderNav = () => {
       <li>
         <Link to="/blog">Blogs</Link>
       </li>
+      {
+          user && <>
+
       <li>
-        <Link to="/review">Review</Link>
+        <Link to="/myOrder">My Order</Link>
       </li>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/addReview">Add Review</Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/profile">My Profile</Link>
       </li>
+    </>}
+      <li><Link to="/addProduct">Add Product</Link></li>
+      <li><Link to="/addProduct">Add Product</Link></li>
       {/* <li>{user && <Link to="/dashboard">Dashboard</Link>}</li> */}
       <li>
         {user ? (

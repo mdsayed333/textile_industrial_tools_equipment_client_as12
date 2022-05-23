@@ -8,6 +8,8 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import HeaderNav from './Pages/Shared/HeaderNav/HeaderNav';
 import Blogs from './Pages/Blogs/Blogs';
 import Purchase from './Pages/Home/Tools/Purchase';
+import RequireAuth from './Pages/Login/RequireAuth';
+import AddProduct from './Pages/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -17,7 +19,12 @@ function App() {
         <Route path='/'element={<Home></Home>}></Route>
         <Route path='/home'element={<Home></Home>}></Route>
         <Route path='/blog' element={<Blogs></Blogs>}></Route>
-        <Route path='/purchase' element={<Purchase></Purchase>}></Route>
+        <Route path='/purchase/:id' element={<RequireAuth>
+          <Purchase></Purchase>
+        </RequireAuth>}></Route>
+        <Route path='/addProduct' element={<RequireAuth>
+          <AddProduct></AddProduct>
+        </RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
