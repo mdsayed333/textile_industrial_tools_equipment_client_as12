@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const AddProduct = () => {
   const {
@@ -8,12 +9,39 @@ const AddProduct = () => {
     handleSubmit,
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = (data1) => {
+    const { available, description, img, minimumOrder, price, productName } =
+      data1;
+    //   console.log(price);
+
+    const newProduct = {
+      name: productName,
+      description: description,
+      img: img,
+      price: price,
+      minimumOrder: minimumOrder,
+      available: available,
+    };
+
+    fetch("http://localhost:5000/tools", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newProduct),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          toast(`Product add successfully...`);
+        }
+      });
   };
+
   return (
     <div className=" ">
-      <div className="w-4/12 mx-auto">
+      <div className="md:w-8/12 lg:w-8/12 mx-auto overflow-auto">
         <h2 className="text-3xl font-bold">Add a Product</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-control">
@@ -35,29 +63,6 @@ const AddProduct = () => {
               {errors.productName?.type === "required" && (
                 <span className="label-text-alt text-red-500">
                   {errors.productName.message}{" "}
-                </span>
-              )}
-            </label>
-          </div>
-          <div className="form-control ">
-            <label className="label">
-              <span className="label-text">Email</span>
-            </label>
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="input input-bordered "
-              {...register("email", {
-                required: {
-                  value: true,
-                  message: "Email is Required",
-                },
-              })}
-            />
-            <label className="label">
-              {errors.email?.type === "required" && (
-                <span className="label-text-alt text-red-500">
-                  {errors.email.message}{" "}
                 </span>
               )}
             </label>
@@ -93,6 +98,7 @@ const AddProduct = () => {
               type="textarea"
               placeholder="Type Short Description"
               className="input input-bordered "
+              maxLength="100"
               {...register("description", {
                 required: {
                   value: true,

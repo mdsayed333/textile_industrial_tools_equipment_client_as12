@@ -20,22 +20,10 @@ const HeaderNav = () => {
       <li>
         <Link to="/blog">Blogs</Link>
       </li>
-      {
-          user && <>
-
-      <li>
-        <Link to="/myOrder">My Order</Link>
-      </li>
-      <li>
-        <Link to="/addReview">Add Review</Link>
-      </li>
-      <li>
-        <Link to="/profile">My Profile</Link>
-      </li>
-    </>}
-      <li><Link to="/addProduct">Add Product</Link></li>
-      <li><Link to="/addProduct">Add Product</Link></li>
-      {/* <li>{user && <Link to="/dashboard">Dashboard</Link>}</li> */}
+      
+      
+      <li>{user && <Link to="/dashboard">Dashboard</Link>}</li>
+      
       <li>
         {user ? (
           <button className="btn btn-ghost" onClick={handleSignOut}>
@@ -76,12 +64,15 @@ const HeaderNav = () => {
               {menuItems}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Textile Industrial <br/> Tools And Equipment</a>
+          <a className="btn btn-ghost normal-case text-xl">
+            Textile Industrial <br /> Tools And Equipment
+          </a>
         </div>
-        {/* <div className="navbar-end">
+        {/* Dashboard Open Sidebar Icon */}
+        <div className="navbar-end">
           <label
             tabIndex="1"
-            htmlFor="dashboard-sidebar"
+            htmlFor="my-drawer-2"
             className="btn btn-ghost lg:hidden"
           >
             <svg
@@ -99,7 +90,7 @@ const HeaderNav = () => {
               />
             </svg>
           </label>
-        </div> */}
+        </div>
 
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">{menuItems}</ul>
