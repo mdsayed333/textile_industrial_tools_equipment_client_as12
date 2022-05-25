@@ -20,6 +20,7 @@ import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
 import RequireAdmin from "./Pages/Login/RequireAdmin";
 import ManageProducts from "./Pages/Dashboard/ManageProducts/ManageProducts";
 import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
+import MyPortfolio from "./Pages/MyPortfolio/MyPortfolio";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/blog" element={<Blogs></Blogs>}></Route>
+        <Route path="portfolio" element={<MyPortfolio></MyPortfolio>}></Route>
         <Route
           path="/purchase/:id"
           element={

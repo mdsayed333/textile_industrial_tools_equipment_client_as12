@@ -15,25 +15,25 @@ const HeaderNav = () => {
   const menuItems = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" className="myButtonSm mr-2 mb-2">Home</Link>
       </li>
       <li>
-        <Link to="/blog">Blogs</Link>
+        <Link to="/blog" className="myButtonSm mr-2 mb-2">Blogs</Link>
       </li>
       <li>
-        <Link to="/portfolio">My Portfolio</Link>
+        <Link to="/portfolio" className="myButtonSm mr-2 mb-2">My Portfolio</Link>
       </li>
       
       
-      <li>{user && <Link to="/dashboard">Dashboard</Link>}</li>
+      <li>{user && <Link to="/dashboard" className="myButtonSm mr-2 mb-2">Dashboard</Link>}</li>
       
       <li>
         {user ? (
-          <button className="btn btn-ghost" onClick={handleSignOut}>
+          <button className="myButtonSm" onClick={handleSignOut}>
             Log Out
           </button>
         ) : (
-          <Link to="/login">Login</Link>
+          <Link to="/login" className="myButtonSm">Login</Link>
         )}
       </li>
     </>
@@ -67,9 +67,10 @@ const HeaderNav = () => {
               {menuItems}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">
+          {/* <a className="btn btn-ghost normal-case text-xl">
             Textile Industrial <br /> Tools And Equipment
-          </a>
+          </a> */}
+          <Link to="/" className="">Textile Industrial <br /> Tools And Equipment</Link>
         </div>
         {/* Dashboard Open Sidebar Icon */}
         <div className="navbar-end">
