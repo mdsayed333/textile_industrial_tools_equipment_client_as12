@@ -1,13 +1,15 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useQuery } from 'react-query';
-import { Link } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import Order from './Order';
 
-const MyOrder = ({tool}) => {
-
+const MyOrder = () => {
+    const [user] = useAuthState(auth);
+    const url = `http://localhost:5000/orders/${user.email}`
     const { isLoading, error, data: orders, refetch } = useQuery('orders', () =>
-     fetch('http://localhost:5000/orders')
+     fetch(url)
      .then(res => res.json())
     );
 

@@ -18,6 +18,8 @@ import AddReview from "./Pages/Dashboard/AddReview/AddReview";
 import Footer from "./Pages/Shared/Footer/Footer";
 import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
 import RequireAdmin from "./Pages/Login/RequireAdmin";
+import ManageProducts from "./Pages/Dashboard/ManageProducts/ManageProducts";
+import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
 
 function App() {
   return (
@@ -60,6 +62,22 @@ function App() {
             element={
               <RequireAdmin>
                 <MakeAdmin></MakeAdmin>
+              </RequireAdmin>
+            }
+          ></Route>
+          <Route
+            path="manageProduct"
+            element={
+              <RequireAdmin>
+                <ManageProducts></ManageProducts>
+              </RequireAdmin>
+            }
+          ></Route>
+          <Route
+            path="manageOrder"
+            element={
+              <RequireAdmin>
+                <ManageAllOrders></ManageAllOrders>
               </RequireAdmin>
             }
           ></Route>

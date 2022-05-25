@@ -20,6 +20,9 @@ const HeaderNav = () => {
       <li>
         <Link to="/blog">Blogs</Link>
       </li>
+      <li>
+        <Link to="/portfolio">My Portfolio</Link>
+      </li>
       
       
       <li>{user && <Link to="/dashboard">Dashboard</Link>}</li>
