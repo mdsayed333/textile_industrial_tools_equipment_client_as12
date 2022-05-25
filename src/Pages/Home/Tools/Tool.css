@@ -1,0 +1,43 @@
+
+.toolContainer{
+    background-color: #F9F1EC;
+}
+
+.myButton{
+    background-color: #DFBA9F;
+    color: black;
+    padding: 15px 35px;
+    font-weight: bold;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    transition: .5s;
+}
+.myButton:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 15px 35px;
+    font-weight: bold;
+    border-left: 2px solid  #DFBA9F;
+    border-right: 2px solid  #DFBA9F;
+    transform: scale(1.05);
+}
+
+.myButtonSm{
+    background-color: #DFBA9F;
+    color: black;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-left: 2px solid black;
+    border-right: 2px solid rgb(0, 0, 0);
+    transition: .5s;
+}
+.myButtonSm:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-left: 2px solid  #DFBA9F;
+    border-right: 2px solid  #DFBA9F;
+    transform: scale(1.05);
+}
+.background{
+    background-color: #F9F1EC !important;
+}

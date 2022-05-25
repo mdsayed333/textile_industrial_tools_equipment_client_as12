@@ -1,28 +1,34 @@
 import React from "react";
+import { useQuery } from "react-query";
+import Loading from "../../Shared/Loading/Loading";
+import "./CustomerReview.css";
+import Review from "./Review";
 
 const CustomerReview = () => {
-  return (
-    <div>
-      <h2 className="text-3xl text-center"> Customer Review</h2>
+    const { isLoading, error, data: reviews, refetch } = useQuery('review', () =>
+     fetch('http://localhost:5000/review')
+     .then(res => res.json())
+    );
 
-      <div class="card w-96 bg-base-100 shadow-xl">
-        {/* <figure class="px-10 pt-10">
-          <img
-            src="https://api.lorem.space/image/shoes?w=400&h=225"
-            alt="Shoes"
-            class="rounded-xl"
-          />
-        </figure> */}
-        <div class="card-body items-center text-center">
-          <h2 class="card-title">Icon!</h2>
-          <p>
-            If a dog chews shoes whose shoes does he choose? If a dog chews
-            shoes whose shoes does he choose?
-          </p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
+    if(isLoading){
+        return <Loading></Loading>
+    }
+
+    const ratting = 3
+  return (
+    <div className="customer-review-container py-10 px-5">
+      <h2 className="text-3xl text-center mb-6"> Customer Review</h2>
+      <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {
+              reviews.map((review, index) => <Review 
+                key={review._id}
+                review={review}
+                index={index}
+              ></Review>)
+          }
+        
+       
       </div>
     </div>
   );
