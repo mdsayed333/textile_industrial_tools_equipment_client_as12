@@ -17,7 +17,7 @@ const CustomerReview = () => {
     const ratting = 3
   return (
     <div className="customer-review-container py-10 px-5">
-      <h2 className="text-3xl text-center mb-6"> Customer Review</h2>
+      <h2 className="text-3xl text-center font-bold mb-6"> Customer Review</h2>
       <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {

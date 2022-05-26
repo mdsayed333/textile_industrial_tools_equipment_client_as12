@@ -1,4 +1,9 @@
-
+.cardHover{
+    transition: .5s;
+}
+.cardHover:hover{
+    transform: scale(1.06);
+}
 .toolContainer{
     background-color: #F9F1EC;
 }

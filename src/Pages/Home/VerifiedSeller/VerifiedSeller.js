@@ -82,8 +82,8 @@ const VerifiedSeller = () => {
         <div className="card-body mx-auto cardHover">
           <div className=" shadow-xl p-3">
             <img
-              style={{height: '400px'}}
-              src="https://i.ibb.co/nzhbWfY/car-wash.jpg"
+              style={{height: '400px', width: '100%'}}
+              src="https://i.ibb.co/YPJpHbD/hannah-busing-Zyx1b-K9mqm-A-unsplash.jpg"
               alt=""
             />
           </div>

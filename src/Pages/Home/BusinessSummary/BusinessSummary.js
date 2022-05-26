@@ -8,11 +8,11 @@ import {
 
 const BusinessSummary = () => {
   return (
-    <div className="mx-auto text-center my-12">
+    <div className="mx-auto text-center my-12 py-10">
       <h2 className="text-4xl text-center font-bold"> Our Company Growing Status</h2>
-      <h2 className="text-3xl text-center">All credit goes to our customer</h2>
-      <div className=" shadow grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-5">
-        <div className="shadow my-4 py-5">
+      <h2 className="text-3xl text-center mb-8">All credit goes to our customer</h2>
+      <div className=" shadow grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-5 ">
+        <div className="shadow my-4 py-5 cardHover">
           <div className=" text-center w-12 mx-auto">
             <FaChartLine className="text-5xl text-secondary" />
           </div>
@@ -21,7 +21,7 @@ const BusinessSummary = () => {
           <div className="stat-desc">21% more than last year</div>
         </div>
 
-        <div className="shadow my-4 py-5">
+        <div className="shadow my-4 py-5 cardHover">
           <div className=" text-center w-12 mx-auto">
             <FaMoneyCheckAlt className="text-5xl text-primary" />
           </div>
@@ -30,7 +30,7 @@ const BusinessSummary = () => {
           <div className="stat-desc">30% more than last year</div>
         </div>
 
-        <div className="shadow my-4 py-5">
+        <div className="shadow my-4 py-5 cardHover">
           <div className=" text-center w-12 mx-auto">
             <FaBriefcase className="text-5xl text-accent" />
           </div>
@@ -39,7 +39,7 @@ const BusinessSummary = () => {
           <div className="stat-desc">50% more than last year</div>
         </div>
 
-        <div className="shadow my-4 py-5">
+        <div className="shadow my-4 py-5 cardHover">
           <div className=" text-center w-12 mx-auto">
             <FaUserCheck className="text-5xl text-netural" />
           </div>

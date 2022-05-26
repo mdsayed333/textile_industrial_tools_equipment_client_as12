@@ -9,7 +9,7 @@ const Dashboard = () => {
   const [admin] = useAdmin(user);
   return (
     <div>
-      <h2 className="text-4xl "> Dashboard </h2>
+      <h2 className="text-4xl font-semibold ml-12"> Dashboard </h2>
 
       <div className="drawer drawer-mobile background">
         <input
@@ -22,18 +22,17 @@ const Dashboard = () => {
         </div>
         <div className="drawer-side overflow-auto background">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-
+          <ul className="menu p-4 overflow-y-auto w-80  text-base-content">
             <li>
               {user && !admin && (
                 <>
-                  <Link className="myButton" to="/dashboard">
+                  <Link className="myButton mb-2" to="/dashboard">
                     My Profile
                   </Link>
-                  <Link className="myButton" to="/dashboard/myOrder">
+                  <Link className="myButton mb-2" to="/dashboard/myOrder">
                     My Order
                   </Link>
-                  <Link className="myButton" to="/dashboard/addReview">
+                  <Link className="myButton mb-2" to="/dashboard/addReview">
                     Add Review
                   </Link>
                 </>
@@ -43,22 +42,22 @@ const Dashboard = () => {
             <li>
               {admin && (
                 <>
-                  <Link className="myButton" to="/dashboard">
+                  <Link className="myButton mb-2" to="/dashboard">
                     My Profile
                   </Link>
-                  <Link className="myButton" to="manageOrder">
+                  <Link className="myButton mb-2" to="manageOrder">
                     {" "}
                     Manage All Order
                   </Link>
-                  <Link className="myButton" to="makeAdmin">
+                  <Link className="myButton mb-2" to="makeAdmin">
                     {" "}
                     Make Admin
                   </Link>
-                  <Link className="myButton" to="addProduct">
+                  <Link className="myButton mb-2" to="addProduct">
                     {" "}
                     Add New Product
                   </Link>
-                  <Link className="myButton" to="manageProduct">
+                  <Link className="myButton mb-2" to="manageProduct">
                     {" "}
                     Manage Product
                   </Link>

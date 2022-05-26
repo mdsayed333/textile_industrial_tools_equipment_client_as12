@@ -7,7 +7,7 @@ const Tool = ({ tool, index }) => {
   return (
     <div className="">
       {index < 6 && (
-        <div style={{}} className="card card-compact bg-base-100 shadow-xl ">
+        <div style={{}} className="card card-compact bg-base-100 shadow-xl cardHover">
           <figure>
             <img style={{ height: "250px" }} src={img} alt="Shoes" />
           </figure>

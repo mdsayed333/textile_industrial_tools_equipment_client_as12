@@ -25,7 +25,7 @@ const ExploreByProduce = () => {
   };
   return (
     <div className="pt-16 pb-10 px-5">
-      <h2 className="text-3xl text-center mb-8">Explore by Products</h2>
+      <h2 className="text-3xl text-center font-bold mb-8">Explore by Products</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
         {tools.map((tool, index) => (
           <Link

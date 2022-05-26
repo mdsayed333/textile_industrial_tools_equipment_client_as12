@@ -21,7 +21,7 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const location = useLocation();
-    const [token] = useToken(user || gUser);
+  const [token] = useToken(user || gUser);
 
   let from = location.state?.from?.pathname || "/";
 
@@ -135,11 +135,11 @@ const Login = () => {
           </p>
 
           <div className="divider">OR</div>
-          <button
-            onClick={() => signInWithGoogle()}
-            className="myButton"
-          >
-                       <div className="flex justify-center items-center"><FaGoogle className="text-2xl mr-2"/> <span>Continue with Google</span></div>
+          <button onClick={() => signInWithGoogle()} className="myButton">
+            <div className="flex justify-center items-center">
+              <FaGoogle className="text-2xl mr-2" />{" "}
+              <span>Continue with Google</span>
+            </div>
           </button>
         </div>
       </div>
