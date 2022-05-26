@@ -70,7 +70,7 @@ const HeaderNav = () => {
           {/* <a className="btn btn-ghost normal-case text-xl">
             Textile Industrial <br /> Tools And Equipment
           </a> */}
-          <Link to="/" className="">Textile Industrial <br /> Tools And Equipment</Link>
+          <Link to="/" className="font-bold text-2xl">Textile Industrial <br /> Tools And Equipment</Link>
         </div>
         {/* Dashboard Open Sidebar Icon */}
         <div className="navbar-end">
