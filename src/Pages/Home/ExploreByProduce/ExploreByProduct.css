@@ -1,0 +1,10 @@
+.expCard{
+    transition: .5s;
+}
+.expCard:hover{
+    transform: scale(1.07);
+}
+.expCard div:hover{
+    background-color: #F9F1EC;
+    color: black;
+}
