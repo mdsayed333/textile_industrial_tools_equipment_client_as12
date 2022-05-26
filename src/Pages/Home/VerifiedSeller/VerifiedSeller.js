@@ -11,8 +11,8 @@ const VerifiedSeller = () => {
   }
   return (
     <div>
-      <div class="card  bg-base-100 shadow-xl  grid lg:grid-cols-2">
-        <div class="card-body cardHover">
+      <div className="card  bg-base-100 shadow-xl  grid lg:grid-cols-2">
+        <div className="card-body cardHover">
           <div className=" shadow-xl p-5">
             <div className="flex justify-between my-4">
               <div className="w-8/12">
@@ -33,7 +33,7 @@ const VerifiedSeller = () => {
                   type="email"
                   value={user?.email}
                   placeholder="Type here"
-                  class="input input-bordered input-accent w-full max-w-xs"
+                  className="input input-bordered input-accent w-full max-w-xs"
                 />
               </div>
             </div>
@@ -46,7 +46,7 @@ const VerifiedSeller = () => {
                   type="text"
                   value="Garment & Textile Industrial Tools"
                   placeholder="Type here"
-                  class="input input-bordered input-accent w-full max-w-xs"
+                  className="input input-bordered input-accent w-full max-w-xs"
                 />
               </div>
             </div>
@@ -58,7 +58,7 @@ const VerifiedSeller = () => {
                 <input
                   type="text"
                   placeholder="Type here"
-                  class="input input-bordered input-accent w-full max-w-xs"
+                  className="input input-bordered input-accent w-full max-w-xs"
                 />
               </div>
             </div>
@@ -70,7 +70,7 @@ const VerifiedSeller = () => {
                 <textarea
                   type="text"
                   placeholder="Type here"
-                  class="input input-bordered input-accent w-full max-w-xs"
+                  className="input input-bordered input-accent w-full max-w-xs"
                 />
               </div>
             </div>
@@ -79,7 +79,7 @@ const VerifiedSeller = () => {
             </div>
           </div>
         </div>
-        <div class="card-body mx-auto cardHover">
+        <div className="card-body mx-auto cardHover">
           <div className=" shadow-xl p-3">
             <img
               style={{height: '400px'}}

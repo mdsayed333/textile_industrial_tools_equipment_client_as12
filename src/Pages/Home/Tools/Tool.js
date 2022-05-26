@@ -7,20 +7,20 @@ const Tool = ({ tool, index }) => {
   return (
     <div className="">
       {index < 6 && (
-        <div style={{}} class="card card-compact bg-base-100 shadow-xl ">
+        <div style={{}} className="card card-compact bg-base-100 shadow-xl ">
           <figure>
             <img style={{ height: "250px" }} src={img} alt="Shoes" />
           </figure>
-          <div class="card-body bg-zinc-200">
-            <h2 class="card-title text-2xl">{name}</h2>
+          <div className="card-body bg-zinc-200">
+            <h2 className="card-title text-2xl">{name}</h2>
             <p>{description}</p>
             <p>
               Price: <span className="">{price}</span>
             </p>
             <p>Minimum Order: {minimumOrder}</p>
-            <div class="card-actions justify-start">
+            <div className="card-actions justify-start">
               <Link to={`/purchase/${_id}`}>
-                <button class=" myButton">Buy Now</button>
+                <button className=" myButton">Buy Now</button>
               </Link>
             </div>
           </div>

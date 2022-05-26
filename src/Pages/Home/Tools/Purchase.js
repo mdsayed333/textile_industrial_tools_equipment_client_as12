@@ -89,12 +89,12 @@ const Purchase = () => {
 
   return (
     <div className="p-12">
-      <div class="card card-side md:w-8/12 mx-auto bg-base-100 shadow-xl">
+      <div className="card card-side md:w-8/12 mx-auto bg-base-100 shadow-xl">
         <figure className="sm:col-span-1">
           <img src={img} alt="Movie" />
         </figure>
-        <div class="card-body sm:col-span-1">
-          <h2 class="card-title">{name}</h2>
+        <div className="card-body sm:col-span-1">
+          <h2 className="card-title">{name}</h2>
           <p>{description}</p>
           <p>Price: {price}</p>
           <p>Minimum Order: {minimumOrder}</p>
@@ -105,20 +105,20 @@ const Purchase = () => {
               onChange={(event) => setOrderQuantity(event.target.value)}
               type="text"
               placeholder="Type Order Quantity"
-              class="ml-2 input input-bordered input-sm w-full max-w-xs"
+              className="ml-2 input input-bordered input-sm w-full max-w-xs"
             />
           </p>
           {quantityError}
-          <div class="card-actions justify-start">
+          <div className="card-actions justify-start">
             {orderQuantity ? (
-              <button onClick={handlePurchase} class="btn btn-primary">
+              <button onClick={handlePurchase} className="btn btn-primary">
                 Purchase
               </button>
             ) : (
               <button
                 onClick={handlePurchase}
                 disabled
-                class={`btn btn-primary`}
+                className={`btn btn-primary`}
               >
                 Purchase
               </button>

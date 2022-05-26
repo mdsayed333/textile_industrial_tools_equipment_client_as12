@@ -11,24 +11,18 @@ const Dashboard = () => {
     <div>
       <h2 className="text-4xl "> Dashboard </h2>
 
-      <div class="drawer drawer-mobile background">
+      <div className="drawer drawer-mobile background">
         <input
           id="my-drawer-2"
           type="checkbox"
-          class="drawer-toggle overflow-y-hidden"
+          className="drawer-toggle overflow-y-hidden"
         />
-        <div class="drawer-content overflow-y-hidden">
+        <div className="drawer-content overflow-y-hidden">
           <Outlet></Outlet>
         </div>
-        <div class="drawer-side overflow-auto background">
-          <label for="my-drawer-2" class="drawer-overlay"></label>
-          <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-            {/* <!-- Sidebar content here --> */}
-            {/* <li>
-              <Link className="myButton" to="dashboard/myProfile">
-                My Profile
-              </Link>
-            </li> */}
+        <div className="drawer-side overflow-auto background">
+          <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
+          <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
 
             <li>
               {user && !admin && (

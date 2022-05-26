@@ -10,13 +10,13 @@ const Blogs = () => {
             <span className="text-red-500">Ques: </span>
             How will you improve the performance of a React Application?
           </h4>
-          <p>
+          
             <span className=" text-blue-500 font-bold">Ans: </span>
             <span className="font-bold">
               important ways to improve the performance of a React application-
             </span>
             <br />
-            <ul class="list-disc pl-9">
+            <ul className="list-disc pl-9">
               <li>
                 <span> Keeping component state local where necessary</span>
                 Keeping component state local where necessary We can used that a
@@ -38,13 +38,7 @@ const Blogs = () => {
                 React application.
               </li>
             </ul>
-            {/* <span className="my-2 d-block">
-              NoSQL databases like MongoDB are a good choice when our data is
-              document-centric and doesn't fit well into the schema of a
-              relational database, when we need to accommodate massive scale,
-              when we are rapidly prototyping, and a few other use.
-            </span> */}
-          </p>
+          
         </div>
 
         <div className=" blogs py-3 px-4 my-element-right">
@@ -87,11 +81,10 @@ const Blogs = () => {
               present value.
             </span>
             <br />
-
-            <p className="mt-3">
-              If we update it directly, calling the setState() afterward may
-              just replace the update you made.
-            </p>
+          </p>
+          <p className="mt-3">
+            If we update it directly, calling the setState() afterward may just
+            replace the update you made.
           </p>
         </div>
 
@@ -128,13 +121,12 @@ const Blogs = () => {
               they are fit to use
             </span>
             <br />
-
-            <p className="mt-3">
-              Unit testing ensures that all codes meet quality standards before
-              deployment. This ensures a reliable engineering environment where
-              quality is paramount. Helps developers write better code more
-              efficiently.
-            </p>
+          </p>
+          <p className="mt-3">
+            Unit testing ensures that all codes meet quality standards before
+            deployment. This ensures a reliable engineering environment where
+            quality is paramount. Helps developers write better code more
+            efficiently.
           </p>
         </div>
       </div>

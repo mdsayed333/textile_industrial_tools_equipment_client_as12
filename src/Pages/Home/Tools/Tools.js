@@ -17,7 +17,7 @@ const Tools = () => {
   return (
     <div className="p-5 toolContainer">
       <h2 className="text-3xl text-center my-6">Tools and Equipment</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 toolContainer">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 toolContainer">
         {
             tools.map((tool, index) => <Tool 
             key={tool._id} 

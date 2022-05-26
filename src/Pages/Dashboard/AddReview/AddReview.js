@@ -13,10 +13,9 @@ const AddReview = () => {
     handleSubmit,
   } = useForm();
 
-
-  if(loading){
-    return <Loading></Loading>
-}
+  if (loading) {
+    return <Loading></Loading>;
+  }
 
   const onSubmit = (data1) => {
     const { img, review, rating } = data1;
@@ -25,9 +24,9 @@ const AddReview = () => {
       name: user?.displayName,
       img: img,
       review: review,
-      rating: rating
-    }
-    
+      rating: rating,
+    };
+
     fetch("https://arcane-eyrie-67329.herokuapp.com/review", {
       method: "POST",
       headers: {
@@ -42,18 +41,13 @@ const AddReview = () => {
           toast(`Review add successfully...`);
         }
       });
-  }
-  
-
-
+  };
 
   return (
     <div>
-
       <div className="md:w-8/12 lg:w-6/12 mx-auto overflow-auto px-5">
-        <h2 className="text-3xl font-bold"> Add Review</h2>
+        <h2 className="text-3xl font-bold my-5"> Add Review</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
-          
           <div className="form-control">
             <label className="label">
               <span className="label-text">Image Link</span>
@@ -125,7 +119,7 @@ const AddReview = () => {
               )}
             </label>
           </div>
-          
+
           <div className="form-control w-48 mx-auto">
             <input className="btn text-white" type="submit" value="ADD" />
           </div>

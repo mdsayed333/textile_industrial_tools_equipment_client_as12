@@ -12,7 +12,6 @@ const AddProduct = () => {
   const onSubmit = (data1) => {
     const { available, description, img, minimumOrder, price, productName } =
       data1;
-    //   console.log(price);
 
     const newProduct = {
       name: productName,
@@ -40,7 +39,7 @@ const AddProduct = () => {
   };
 
   return (
-    <div className=" ">
+    <div className="py-10 ">
       <div className="md:w-8/12 lg:w-8/12 mx-auto overflow-auto">
         <h2 className="text-3xl font-bold">Add a Product</h2>
         <form onSubmit={handleSubmit(onSubmit)}>

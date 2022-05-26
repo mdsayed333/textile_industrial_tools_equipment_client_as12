@@ -9,6 +9,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import useToken from "../../hooks/useToken";
 import Loading from "../Shared/Loading/Loading";
+import { FaGoogle } from "react-icons/fa";
 
 const Register = () => {
   const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
@@ -53,7 +54,7 @@ const Register = () => {
   };
 
   return (
-    <div className="flex justify-center h-screen items-center">
+    <div className="flex justify-center h-screen items-center my-6">
       <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body">
           <h2 className="text-xl font-bold text-center">Sign Up </h2>
@@ -148,24 +149,24 @@ const Register = () => {
             </div>
             {loginErrorMessage}
             <input
-              className="btn w-full max-w-xs text-white"
+              className="muButton w-full max-w-xs text-white"
               type="submit"
               value="SIGN UP"
             />
           </form>
           <p>
             Already have an account!{" "}
-            <Link to="/login" className="text-primary text-sm">
+            <Link to="/login" className="text-accent text-sm">
               Login
             </Link>
           </p>
 
-          <div className="divider">OR</div>
+          <div className="divider"><span className="text-accent">OR</span></div>
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline"
+            className="myButton"
           >
-            Continue with Google
+            <div className="flex justify-center items-center"><FaGoogle className="text-2xl mr-2"/> <span>Continue with Google</span></div>
           </button>
         </div>
       </div>

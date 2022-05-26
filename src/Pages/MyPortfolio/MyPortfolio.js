@@ -22,7 +22,7 @@ const MyPortfolio = () => {
           <h2 className="text-2xl mt-7 mb-5 font-bold">Technology And Skill</h2>
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <ul class="list-disc ml-4">
+              <ul className="list-disc ml-4">
                 <li>
                   {" "}
                   <p>HTML</p>
@@ -48,7 +48,7 @@ const MyPortfolio = () => {
               </ul>
             </div>
             <div>
-              <ul class="list-disc">
+              <ul className="list-disc">
                 <li>
                   {" "}
                   <p>Java Script</p>

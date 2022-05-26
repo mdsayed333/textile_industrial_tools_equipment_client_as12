@@ -21,20 +21,20 @@ const Order = ({order, refetch}) => {
         }
     }
   return (
-    <div style={{}} class="card card-compact bg-base-100 shadow-xl">
+    <div style={{}} className="card card-compact bg-base-100 shadow-xl">
       <figure>
         <img style={{ height: "250px" }} src={img} alt="Shoes" />
       </figure>
-      <div class="card-body">
-        <h2 class="card-title">{name}</h2>
+      <div className="card-body">
+        <h2 className="card-title">{name}</h2>
         <p>{description}</p>
         <p>Price: {price}</p>
         <div className="flex justify-between">
-            <div class="card-actions justify-end">
-                <button  class="btn btn-primary">Pay</button>
+            <div className="card-actions justify-end">
+                <button  className="btn btn-primary">Pay</button>
             </div>
-            <div class="card-actions justify-start">
-                <button onClick={handleDelete} class="btn btn-primary">Delete</button>
+            <div className="card-actions justify-start">
+                <button onClick={handleDelete} className="btn btn-primary">Delete</button>
             </div>
         </div>
       </div>

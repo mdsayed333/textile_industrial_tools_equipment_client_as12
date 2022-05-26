@@ -21,10 +21,9 @@ const ManageAllOrders = () => {
   }
   return (
     <div>
-      {/* <h2 className="text-4xl text-center"> Manage All Orders </h2> */}
-
-      <div class="overflow-x-auto">
-        <table class="table table-zebra w-full">
+      <h2 className="text-4xl text-center my-6"> Manage All Orders </h2>
+      <div className="overflow-x-auto">
+        <table className="table table-zebra w-full">
           <thead>
             <tr>
               <th>#</th>

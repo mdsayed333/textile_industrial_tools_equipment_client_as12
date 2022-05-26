@@ -21,10 +21,10 @@ const MakeAdmin = () => {
   }
   return (
     <div>
-      <h2 className="text-4xl text-center"> Make Admin </h2>
+      <h2 className="text-4xl text-center my-6"> Make Admin </h2>
 
-      <div class="overflow-x-auto">
-        <table class="table table-zebra md:w-full">
+      <div className="overflow-x-auto">
+        <table className="table table-zebra md:w-full">
           <thead>
             <tr>
               <th>#</th>

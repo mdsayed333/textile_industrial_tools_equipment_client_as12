@@ -58,12 +58,12 @@ const MyProfile = () => {
         <CreatedProfile profile={profile}></CreatedProfile>
       ) : (
         <div className="w-full md:w-6/12 mx-auto text-center px-8">
-          <h2 className="text-4xl text-center"> Update Profile </h2>
+          <h2 className="text-4xl text-center my-5"> Update Profile </h2>
 
           <form onSubmit={addProfile}>
-            <div class="form-control ">
-              <label class="label">
-                <span class="label-text">User name?</span>
+            <div className="form-control ">
+              <label className="label">
+                <span className="label-text">User name?</span>
               </label>
               <input
                 type="text"
@@ -71,12 +71,12 @@ const MyProfile = () => {
                 value={user.displayName}
                 disabled
                 placeholder="Type here"
-                class="input input-bordered"
+                className="input input-bordered"
               />
             </div>
-            <div class="form-control ">
-              <label class="label">
-                <span class="label-text">User email</span>
+            <div className="form-control ">
+              <label className="label">
+                <span className="label-text">User email</span>
               </label>
               <input
                 type="text"
@@ -84,43 +84,43 @@ const MyProfile = () => {
                 value={user.email}
                 disabled
                 placeholder="Type here"
-                class="input input-bordered "
+                className="input input-bordered "
               />
             </div>
-            <div class="form-control ">
-              <label class="label">
-                <span class="label-text">Phone Number</span>
+            <div className="form-control ">
+              <label className="label">
+                <span className="label-text">Phone Number</span>
               </label>
               <input
                 type="number"
                 name="number"
                 required
                 placeholder="Type here"
-                class="input input-bordered"
+                className="input input-bordered"
               />
             </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Image Link</span>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Image Link</span>
               </label>
               <input
                 type="text"
                 required
                 name="img"
                 placeholder="Type here"
-                class="input input-bordered"
+                className="input input-bordered"
               />
             </div>
-            <div class="form-control ">
-              <label class="label">
-                <span class="label-text">Address</span>
+            <div className="form-control ">
+              <label className="label">
+                <span className="label-text">Address</span>
               </label>
               <input
                 type="text"
                 name="address"
                 required
                 placeholder="Type here"
-                class="input input-bordered"
+                className="input input-bordered"
               />
             </div>
             <div className="text-center my-5">

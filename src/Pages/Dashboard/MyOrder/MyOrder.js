@@ -18,10 +18,10 @@ const MyOrder = () => {
     }
 
     return (
-        <div className='px-3'>
-            <h2 className='text-4xl text-center'> My Order </h2>
+        <div className='px-3 py-5'>
+            <h2 className='text-4xl text-center my-5'> My Order </h2>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 ">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 ">
                 {
                     orders.map(order => <Order 
                         key={order._id} 

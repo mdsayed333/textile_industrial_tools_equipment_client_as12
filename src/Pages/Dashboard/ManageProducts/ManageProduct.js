@@ -29,19 +29,19 @@ const ManageProduct = ({product, refetch}) => {
 
     
     return (
-        <div style={{}} class="card card-compact bg-base-100 shadow-xl ">
+        <div style={{}} className="card card-compact bg-base-100 shadow-xl ">
           <figure>
             <img style={{ height: "250px" }} src={img} alt="img" />
           </figure>
-          <div class="card-body bg-zinc-200">
-            <h2 class="card-title text-2xl">{name}</h2>
+          <div className="card-body bg-zinc-200">
+            <h2 className="card-title text-2xl">{name}</h2>
             <p>{description}</p>
             <p>
               Price: <span className="">{price}</span>
             </p>
             <p>Minimum Order: {minimumOrder}</p>
-            <div class="card-actions justify-center">
-                <button onClick={handleDelete} class=" myButton">DELETE</button>
+            <div className="card-actions justify-center">
+                <button onClick={handleDelete} className=" myButton">DELETE</button>
             </div>
           </div>
         </div>

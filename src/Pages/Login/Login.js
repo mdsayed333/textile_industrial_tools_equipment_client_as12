@@ -8,6 +8,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import useToken from "../../hooks/useToken";
 import Loading from "../Shared/Loading/Loading";
+import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
   const [signInWithGoogle, gUser, gloading, gerror] = useSignInWithGoogle(auth);
@@ -121,14 +122,14 @@ const Login = () => {
             </div>
             {loginErrorMessage}
             <input
-              className="btn w-full max-w-xs text-white"
+              className="myButton w-full max-w-xs text-white"
               type="submit"
               value="LOGIN"
             />
           </form>
           <p>
             New in this Website{" "}
-            <Link to="/register" className="text-primary text-sm">
+            <Link to="/register" className=" text-accent hover:link text-sm">
               Create New Account
             </Link>
           </p>
@@ -136,9 +137,9 @@ const Login = () => {
           <div className="divider">OR</div>
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline"
+            className="myButton"
           >
-            Continue with Google
+                       <div className="flex justify-center items-center"><FaGoogle className="text-2xl mr-2"/> <span>Continue with Google</span></div>
           </button>
         </div>
       </div>

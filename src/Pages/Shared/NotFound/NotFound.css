@@ -1,0 +1,21 @@
+.container404{
+    color: #000000;
+    padding-top: 70px;
+    height: 50vh;
+    text-align: center;
+    align-items: center;
+    background-color: #e3cebf;
+    margin: 20px 0 20px 0;
+}
+.container404 h1{
+    font-size: 50px;
+    color: white;
+    font-style: italic;
+}
+.container404 h3{
+    font-size: 30px;
+    font-style: italic;
+}
+.container404 p{
+    font-style: italic;
+}
