@@ -23,7 +23,7 @@ const CustomerReview = () => {
           {
               reviews.map((review, index) => <Review 
                 key={review._id}
-                review={review}
+                reviews={review}
                 index={index}
               ></Review>)
           }
