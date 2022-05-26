@@ -1,0 +1,25 @@
+
+.blogContainer{
+    border-radius: 5px;
+    text-align: justify;
+    background-color: rgb(236, 246, 246);
+    padding: 30px 20px;
+}
+.blogs{
+    margin-bottom: 30px;
+}
+.my-element{
+    border-top: 5px solid rgb(25, 43, 69);
+    border-right: 1px solid rgb(25, 43, 69);
+    border-bottom: 5px solid rgb(25, 43, 69);
+    border-left: 2px solid rgb(25, 43, 69);
+    border-radius: 10px ;
+    
+}
+.my-element-right{
+    border-top: 5px solid rgb(25, 43, 69);
+    border-right: 2px solid rgb(25, 43, 69);
+    border-bottom: 5px solid rgb(25, 43, 69);
+    border-left: 1px solid rgb(25, 43, 69);
+    border-radius: 10px ;
+}

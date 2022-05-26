@@ -5,10 +5,8 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Login/Register";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
 import HeaderNav from "./Pages/Shared/HeaderNav/HeaderNav";
-import Blogs from "./Pages/Blogs/Blogs";
 import Purchase from "./Pages/Home/Tools/Purchase";
 import RequireAuth from "./Pages/Login/RequireAuth";
-import AddProduct from "./Pages/AddProduct/AddProduct";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Dashboard from "./Pages/Dashboard/Dashboard";
@@ -21,6 +19,8 @@ import RequireAdmin from "./Pages/Login/RequireAdmin";
 import ManageProducts from "./Pages/Dashboard/ManageProducts/ManageProducts";
 import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
 import MyPortfolio from "./Pages/MyPortfolio/MyPortfolio";
+import AddProduct from "./Pages/Dashboard/AddProduct/AddProduct";
+import Blog from "./Pages/Blog/Blog";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/blog" element={<Blogs></Blogs>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="portfolio" element={<MyPortfolio></MyPortfolio>}></Route>
         <Route
           path="/purchase/:id"
