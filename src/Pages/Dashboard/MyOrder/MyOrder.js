@@ -19,7 +19,7 @@ const MyOrder = () => {
 
     return (
         <div className='px-3 py-5'>
-            <h2 className='text-4xl text-center my-5'> My Order </h2>
+            <h2 className='text-4xl text-center my-5 font-semibold'> My Order </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 ">
                 {

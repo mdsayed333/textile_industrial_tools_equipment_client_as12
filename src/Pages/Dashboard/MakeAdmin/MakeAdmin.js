@@ -21,7 +21,7 @@ const MakeAdmin = () => {
   }
   return (
     <div>
-      <h2 className="text-4xl text-center my-6"> Make Admin </h2>
+      <h2 className="text-4xl text-center my-6 font-semibold"> Make Admin </h2>
 
       <div className="overflow-x-auto">
         <table className="table table-zebra md:w-full">

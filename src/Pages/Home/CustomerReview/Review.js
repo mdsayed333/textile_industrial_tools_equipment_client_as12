@@ -7,7 +7,7 @@ const Review = ({ reviews, index }) => {
   return (
     <div>
       {index < 3 && (
-        <div className="card bg-base-100 shadow-xl ">
+        <div className="card bg-base-100 shadow-xl cardHover">
           <div className="card-body items-center text-center">
             <h2 className="card-title">
               <FaQuoteRight className="text-4xl text-accent" />
@@ -26,7 +26,6 @@ const Review = ({ reviews, index }) => {
                     <div className="rating flex items-center">
                       <p>Rating: {rating}</p>
                       <FaStar className="text-accent" />
-                      {/* <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked/> */}
                     </div>
                   </div>
                 </div>

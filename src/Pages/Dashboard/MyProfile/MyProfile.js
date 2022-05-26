@@ -58,7 +58,7 @@ const MyProfile = () => {
         <CreatedProfile profile={profile}></CreatedProfile>
       ) : (
         <div className="w-full md:w-6/12 mx-auto text-center px-8">
-          <h2 className="text-4xl text-center my-5"> Update Profile </h2>
+          <h2 className="text-4xl text-center my-5 font-semibold"> Update Profile </h2>
 
           <form onSubmit={addProfile}>
             <div className="form-control ">
