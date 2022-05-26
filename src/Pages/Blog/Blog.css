@@ -9,17 +9,17 @@
     margin-bottom: 30px;
 }
 .my-element{
-    border-top: 5px solid rgb(25, 43, 69);
-    border-right: 1px solid rgb(25, 43, 69);
-    border-bottom: 5px solid rgb(25, 43, 69);
-    border-left: 2px solid rgb(25, 43, 69);
+    border-top: 5px solid #DFBA9F;
+    border-right: 1px solid #DFBA9F;
+    border-bottom: 5px solid #DFBA9F;
+    border-left: 2px solid #DFBA9F;
     border-radius: 10px ;
     
 }
 .my-element-right{
-    border-top: 5px solid rgb(25, 43, 69);
-    border-right: 2px solid rgb(25, 43, 69);
-    border-bottom: 5px solid rgb(25, 43, 69);
-    border-left: 1px solid rgb(25, 43, 69);
+    border-top: 5px solid #DFBA9F;
+    border-right: 2px solid #DFBA9F;
+    border-bottom: 5px solid #DFBA9F;
+    border-left: 1px solid #DFBA9F;
     border-radius: 10px ;
 }

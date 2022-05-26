@@ -23,7 +23,7 @@ const AddProduct = () => {
       available: available,
     };
 
-    fetch("http://localhost:5000/tools", {
+    fetch("https://arcane-eyrie-67329.herokuapp.com/tools", {
       method: "POST",
       headers: {
         "content-type": "application/json",

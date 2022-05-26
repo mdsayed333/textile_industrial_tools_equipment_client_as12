@@ -5,7 +5,7 @@ import ManageProduct from './ManageProduct';
 
 const ManageProducts = () => {
     const { isLoading, error, data: products, refetch } = useQuery('tools', () =>
-     fetch('http://localhost:5000/tools')
+     fetch('https://arcane-eyrie-67329.herokuapp.com/tools')
      .then(res => res.json())
     );
 

@@ -9,7 +9,7 @@ import CreatedProfile from "./CreatedProfile";
 const MyProfile = () => {
   const [user] = useAuthState(auth);
   const userEemail = user.email;
-  const url = `http://localhost:5000/profile/${userEemail}`;
+  const url = `https://arcane-eyrie-67329.herokuapp.com/profile/${userEemail}`;
   const {
     isLoading,
     error,
@@ -35,7 +35,7 @@ const MyProfile = () => {
       address: address,
     };
 
-    fetch("http://localhost:5000/profile", {
+    fetch("https://arcane-eyrie-67329.herokuapp.com/profile", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -47,15 +47,14 @@ const MyProfile = () => {
         console.log(data);
         if (data.insertedId) {
           toast(`Profile updated successfully...`);
-          //   refetch()
+            refetch()
         }
       });
   };
-  //   profile && console.log(profile.length);
 
   return (
     <div>
-      {profile.length > 0 ? (
+      {profile?.length > 0 ? (
         <CreatedProfile profile={profile}></CreatedProfile>
       ) : (
         <div className="w-full md:w-6/12 mx-auto text-center px-8">

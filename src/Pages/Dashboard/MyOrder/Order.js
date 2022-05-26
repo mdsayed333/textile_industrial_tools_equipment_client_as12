@@ -8,7 +8,7 @@ const Order = ({order, refetch}) => {
     const handleDelete = () => {
         const confirm = window.confirm("Are You Sure To Delete!");
         console.log(confirm)
-        const url = `http://localhost:5000/order/${_id}`;
+        const url = `https://arcane-eyrie-67329.herokuapp.com/order/${_id}`;
         if(confirm){
             fetch( url, {
                   method: 'DELETE'

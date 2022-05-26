@@ -9,7 +9,7 @@ const ManageAllOrders = () => {
     isLoading,
     refetch,
   } = useQuery("users", () =>
-    fetch("http://localhost:5000/orders", {
+    fetch("https://arcane-eyrie-67329.herokuapp.com/orders", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

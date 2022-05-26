@@ -11,7 +11,7 @@ const ExploreByProduce = () => {
     data: tools,
     refetch,
   } = useQuery("tools", () =>
-    fetch("http://localhost:5000/tools").then((res) => res.json())
+    fetch("https://arcane-eyrie-67329.herokuapp.com/tools").then((res) => res.json())
   );
 
   if (isLoading) {

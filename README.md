@@ -1,5 +1,5 @@
 
-# ✨Textile  Industrial Tools And Equipmetn✨
+# ✨Textile  Industrial Tools And Equipmetn ✨
 
 Live Website Link: [Textile Industrial Tools And Equipmetn](https://industrial-tools-and-equipment.web.app/).
 

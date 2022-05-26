@@ -12,7 +12,7 @@ const Purchase = () => {
   const { id } = useParams();
   const [orderQuantity, setOrderQuantity] = useState(0);
   const [quantityError, setQuantityError] = useState("");
-  const url = `http://localhost:5000/tools/${id}`;
+  const url = `https://arcane-eyrie-67329.herokuapp.com/tools/${id}`;
   const {
     isLoading,
     error,
@@ -61,7 +61,7 @@ const Purchase = () => {
         orderQuantity: orderQuantity
       }
 
-      fetch('http://localhost:5000/order', {
+      fetch('https://arcane-eyrie-67329.herokuapp.com/order', {
         method: 'POST',
         headers: {
           'content-type': 'application/json'
@@ -88,7 +88,7 @@ const Purchase = () => {
   };
 
   return (
-    <div>
+    <div className="p-12">
       <div class="card card-side md:w-8/12 mx-auto bg-base-100 shadow-xl">
         <figure className="sm:col-span-1">
           <img src={img} alt="Movie" />

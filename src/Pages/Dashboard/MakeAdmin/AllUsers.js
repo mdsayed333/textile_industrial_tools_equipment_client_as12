@@ -5,7 +5,7 @@ const AllUsers = ({ user, index, refetch }) => {
   const { _id, email, role} = user;
 
   const doAdmin = () => {
-    fetch(`http://localhost:5000/user/admin/${email}`, {
+    fetch(`https://arcane-eyrie-67329.herokuapp.com/user/admin/${email}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -29,7 +29,7 @@ const AllUsers = ({ user, index, refetch }) => {
   const handleDelete = () => {
     const confirm = window.confirm("Are You Sure To Delete!");
     console.log(confirm)
-    const url = `http://localhost:5000/user/${email}`;
+    const url = `https://arcane-eyrie-67329.herokuapp.com/user/${email}`;
     if(confirm){
         fetch( url, {
               method: 'DELETE',

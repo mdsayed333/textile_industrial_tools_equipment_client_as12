@@ -7,7 +7,7 @@ const ManageProduct = ({product, refetch}) => {
     const handleDelete = () => {
         const confirm = window.confirm("Confirm To Delete Product!");
         console.log(confirm)
-        const url = `http://localhost:5000/tools/${_id}`;
+        const url = `https://arcane-eyrie-67329.herokuapp.com/tools/${_id}`;
         if(confirm){
             fetch( url, {
                   method: 'DELETE',
