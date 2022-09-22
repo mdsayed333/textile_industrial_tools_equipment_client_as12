@@ -7,7 +7,7 @@ Live Website Link: [Textile Industrial Tools And Equipmetn](https://industrial-t
 Live Website Link option2: [Textile Industrial Tools And Equipmetn](https://industrial-tools-and-equipment.firebaseapp.com/).
 
 
-Server side private repo link: [Textile Industrial Tools And Equipmetn](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-mdsayed333).
+Server side repo link: [Textile Industrial Tools And Equipmetn](https://github.com/mdsayed333/textile_industrial_tools_equipment_server_as12).
 
 
 ## Features and Functionality
